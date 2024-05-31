@@ -14,10 +14,10 @@ public class Permission implements GrantedAuthority {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
+    private String key;
 
     @Override
     public String getAuthority() {
-        return name;
+        return key;
     }
 }

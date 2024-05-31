@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.example.demo.utils.PasswordEncoderEnum;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -31,6 +32,8 @@ public class AppUser implements UserDetails {
     private String password;
     private Boolean status;
     private String imagePath;
+    @Enumerated
+    private PasswordEncoderEnum passwordEncoderEnum;
     @ManyToOne
     private Role role;
 

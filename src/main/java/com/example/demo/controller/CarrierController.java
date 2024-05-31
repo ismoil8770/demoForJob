@@ -1,4 +1,4 @@
-package com.example.demo.controller.admin;
+package com.example.demo.controller;
 
 import com.example.demo.dto.CarrierRegionDto;
 import com.example.demo.model.ResModel;

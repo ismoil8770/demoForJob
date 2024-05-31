@@ -20,6 +20,7 @@ public class Role {
     private Integer id;
     @Column(nullable = false)
     private String name;
+    private String description;
     @ManyToMany
     private List<Permission> permissions;
 }
